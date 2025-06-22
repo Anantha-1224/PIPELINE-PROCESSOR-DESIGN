@@ -37,3 +37,11 @@ Performs arithmetic (ADD, SUB) and logical operations. Data Memory:
 Used for LOAD/STORE instructions. Pipeline Registers:
 
 Separates the stages of the pipeline to hold intermediate data and control signals.
+
+output
+Time=0 R3=          0
+Time=15 R3=          0
+Time=25 R3=          0
+Time=35 R3=          0
+Time=45 R3=         30   // 10 (R1) + 20 (R2)
+Output R3 = 30 after pipeline delay — result appears around the 5th cycle due to 5-stage pipeline latency.
